@@ -1,0 +1,84 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Position_Micro_Service",
+		"_postman_id": "9eb969d8-7e96-7d6c-7543-f168d81dcb36",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3012/api/v1/positions",
+			"request": {
+				"url": "http://localhost:3012/api/v1/positions",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"UI Developer\",\n\t\"description\":\"Hands on experience with Javascript, HTML, CSS.\",\n\t\"required_min_exp\":5\n}"
+				},
+				"description": "Create Position"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3012/api/v1/positions",
+			"request": {
+				"url": "http://localhost:3012/api/v1/positions/",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "List Positions"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3012/api/v1/positions/5ac5c8f8520a0856f8ec676e",
+			"request": {
+				"url": "http://localhost:3012/api/v1/positions/5ac5c8f8520a0856f8ec676e",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Get Position with ID"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3012/api/v1/positions/5ac5ca59e70ebb5c1e0d9d94",
+			"request": {
+				"url": "http://localhost:3012/api/v1/positions/5ac5ca59e70ebb5c1e0d9d94",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Updated Name for UI Developer\"\n}"
+				},
+				"description": "Update Query with ID"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3012/api/v1/positions/5ac5ca59e70ebb5c1e0d9d94",
+			"request": {
+				"url": "http://localhost:3012/api/v1/positions/5ac5ca59e70ebb5c1e0d9d94",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": "Delete Position "
+			},
+			"response": []
+		}
+	]
+}

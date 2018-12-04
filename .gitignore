@@ -1,0 +1,11 @@
+**/node_modules
+**/package-lock.json
+ats-microservices/position_micorservice/app.log
+ats-microservices/position_micorservice/package-lock.json
+package-lock.json
+ats-ui/package-lock.json
+**/.nyc_output
+**/coverage
+ats-microservices/**/*.log
+.DS_Store
+keycloak.json
